@@ -23,4 +23,4 @@ jobs:
 
       - name: Build container image in ACR
         run: |
-          az acr build --registry trainingapcacr --image todo-app:<training05>-${{ github.event.number }} .
+          az acr build --registry trainingapcacr --image todo-app:training05-${{ github.event.number }} .
